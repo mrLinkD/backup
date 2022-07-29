@@ -57,5 +57,5 @@ mysqldump -h$WPDBHOST -u$WPDBUSER -p$WPDBPASS $WPDBNAME | gzip -c > "$BAKDIR/$SI
 cp -f $BAKDIR/$SITENAME-$NOW.tar.gz $BAKDIR/$SITENAME-$NOW.sql.gz $BAKDIR/$NOW
 cd $BAKDIR/$NOW
 $CURL -u $FTPU:$FTPP ftp://$FTPS/$FTPD/ -T "{$SITENAME-$NOW.tar.gz,$SITENAME-$NOW.sql.gz}" -s
-rm -rf $BACKUP/$NOW/*
+rm -rf $BAKDIR/$NOW/*
 
