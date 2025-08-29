@@ -5,7 +5,7 @@
 FTPD="cites/" #директория внутри FTP (вначале и в конце без слеша)
 FTPU="user" #имя пользователя
 FTPP="password" #пароль
-FTPS="192.168.77.1" #сервер FTP
+FTPS="0.0.0.0" #сервер FTP
 CURL="$(which curl)"
 NOW=$(date +"%d_%m_%Y")
 DAYS=5
